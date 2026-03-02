@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+        body{
+            background-color: #F0F8FF;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .h1{
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1E90FF;
+        }
+        .form{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1E90FF;
+        }
+        .result{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1E90FF;
+        }
+        .botao{
+            border:2px solid #1E90FF;
+            color: #1E90FF;
+            background-color: #F8F8FF;
+            height: 40px;
+            width: 80px;
+            cursor: pointer;
+            background-color: white;
+            border-radius: 6px;
+        }
+        .botao:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="h1">Calculadora de Quadrado</h1>
+            <form id="numeroForm" class="form">
+                <label for="numero">Digite um número:</label>
+                <input type="number" id="numero" name="numero" required class="input">
+                <button type="submit" class="botao">Calcular Quadrado</button>
+            </form>
+    <p class="result">O quadrado é: <span id="resultadoQuadrado"></p>
+    <p class="result">O cubo é: <span id="resultadoCubo"></p>
+</body>
+</html>
