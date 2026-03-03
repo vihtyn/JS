@@ -1,16 +1,19 @@
 document.getElementById('numeroForm').addEventListener('submit',
 function(event) {
-event.preventDefault(); // Impede o envio do formulário
-// Obtém o valor do número digitado
+event.preventDefault(); 
 const numero = parseFloat(document.getElementById('numero').value);
-// Chama a função para calcular o quadrado
-const resultadoQuadrado = calcularQuadrado(numero);
 
-const resultadoCubo =calcularCubo(numero);
-// Exibe o resultado na página
-document.getElementById('resultadoQuadrado').textContent = resultadoQuadrado;
+const operacao = document.getElementById('operacao').value;
 
-document.getElementById('resultadoCubo').textContent = resultadoCubo;
+let resultadoFinal;
+
+if(operacao == "quadrado"){
+    resultadoFinal = calcularQuadrado(numero);
+}else{
+    resultadoFinal = calcularCubo(numero);
+}
+
+document.getElementById('resultadoFinal').textContent = resultadoFinal;
 });
 function calcularQuadrado(numero) {
 return numero * numero;
