@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="compras.js" defer></script>
+    <title>Calculadora de Juros</title>
+</head>
+<body>
+    <div>
+        <h1>Calduladora de Juros</h1>
+            <form id="calcular">
+                <label for="valorCompra"> Digite o valor da sua compra: </label>
+                <input type="number" id="valorCompra" name="valorCompra" required class="input">
+                <br>
+                <label for="parcelas">Digite a quantidade de parcelas: </label>
+                <input type="number" id="parcelas" name="parcelas" required class="input">
+                <br>
+                <label for="juros">Digite a taxa de juros: </label>
+                <input type="number" id="juros" name="juros" required class="input">
+                <br>
+                <button type="submit">Calcular</button>
+            </form>
+            <p>A compra com juros sairá por: <span id="valorFinal"></span></p>
+            <p>As parcelas sairão por: <span id="valorParcelas"></span></p>
+    </div>
+</body>
+</html>
