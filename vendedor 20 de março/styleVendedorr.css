@@ -1,0 +1,62 @@
+  body { 
+        font-family: sans-serif; 
+        background-color: #f4f4f9; 
+        padding: 20px; 
+    }
+
+    /* Container da lista */
+    #listaValores {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Espaço entre os itens */
+    }
+
+    /* Estilo de cada item (o card) */
+    .item-lista {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: space-between; /* Nome na esquerda, ID na direita */
+        align-items: center;
+        border-left: 5px solid #2ecc71; /* Faixinha verde lateral */
+    }
+
+    .item-valor {
+        font-weight: bold;
+        color: #333;
+        font-size: 1.1em;
+    }
+
+    .item-indice {
+        color: #888;
+        font-size: 0.9em;
+        background: #eee;
+        padding: 2px 8px;
+        border-radius: 4px;
+    }
+
+    .vazio {
+        color: #999;
+        font-style: italic;
+    }
+
+    .btn-excluir {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.id-venda {
+    background: #333;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin-right: 5px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Vendas</title>
+    <link rel="stylesheet" href="styleVendedorr.css">
+</head>
+<body>
+    <div>
+        <h1>Histórico de Vendas</h1>
+    </div>
+    <div>
+        <input type="text" id="nomeVendedor" placeholder="Digite o nome do vendedor">
+        <input type="number" id="valorCompra" placeholder="Digite o valor da compra">
+        <button onclick="adicionarVenda()">Confirmar</button> 
+    </div>
+
+    <div id="listaValores"></div>
+    <div id="info"></div>
+
+    <template id="modelo-venda">
+    <div class="item-lista">
+        <div class="venda-info">
+            <span class="id-venda"></span> 
+            <strong class="nome-txt"></strong> 
+            <small class="data-txt"></small>
+            <p class="bruto-txt"></p>
+            <p class="desc-txt"></p>
+            <span class="final-txt"></span>
+        </div>
+        <button class="btn-excluir" style="background-color: red; color: white;">Excluir Venda</button>
+    </div>
+</template>
+
+    <script src="vendedor.js"></script>
+</body>
+</html>
